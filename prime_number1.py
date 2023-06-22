@@ -13,6 +13,7 @@ def check_prime(n):
         # check if number who is different of 2 is peer.
         if(n % 2 == 0):
             isPrime = False
+            iteration = 1
         else:
             # Determiner la limite (racine(n)+1)
             limite = int(math.sqrt(n) + 1)
@@ -28,6 +29,6 @@ def check_prime(n):
     print("Iteration :",iteration)
     return isPrime
 
-print(check_prime(27))
+print(check_prime(26))
 # number = eval(input("Numbre :"))
 

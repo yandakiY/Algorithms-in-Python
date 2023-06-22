@@ -9,7 +9,7 @@ listes = [
 
 # Dictionnaries
 dic = {p: listes[p] for p in range(len(listes))}
-# Print dictionnarie
+# Print dictionnary
 # print("Dictionnaries :\n",dic)
 
 # Parcourir chaque items du dictionnaire en affichant l'index et la valeur correspondant a chaque index.

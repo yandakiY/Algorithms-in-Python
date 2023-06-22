@@ -78,7 +78,7 @@ def count_negatives(lists):
 # Made this function without all these code
 
 def new_count_negatives(lists):
-    
+    # Count element negative
     return len([num for num in lists if num < 0])
 
 print(count_negatives(numbers))
