@@ -22,7 +22,7 @@ for i in range(size_lists):
 
 # print("Length :", len(lists))
 
-
+print("Liste",lists)
 # Trouver le nombre d'occurence pour chaque valeur de la lists
 for i in range(len(lists)):
     
@@ -34,7 +34,7 @@ for i in range(len(lists)):
         if (lists[i] == lists[j]):
             finded = True
     
-    # Operation si l'element est deja present en gauche
+    # Operation si l'element est deja present a gauche
     if (finded == False): # element pas present a gauche
         # occurence = 1
         occurence = 1
@@ -46,7 +46,7 @@ for i in range(len(lists)):
         
         # Apres avoir verifier si l'element n'a pas encore été parcouru et d'avoir compté le nombre d'occurence
         # Affichage du nombre d'occurence
-        print(lists[i]," :",occurence," occurence")
+        print(lists[i]," :",occurence," occurence") 
     
 
 # print(lists)
