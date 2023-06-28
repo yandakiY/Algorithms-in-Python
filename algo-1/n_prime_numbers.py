@@ -58,9 +58,10 @@ for x in range(0 , len(list_primes)):
         # insertion du nombre premier divisible 
         lists_diviseurs.append(list_primes[x])
         
-        # mise a jour de 'number'68
+        # mise a jour de 'number'
         number = number / list_primes[x]
     
+    # add number in lists of diviseurs 
     if(number <= list_primes[x+1] and number != 1):
         lists_diviseurs.append(int(number))
         break
