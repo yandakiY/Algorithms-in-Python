@@ -42,5 +42,6 @@ def find_nearest_element(list , target_value):
     return near_element
 
 
-ex_list = [3,9,2,10]
-print('Test' , find_nearest_element(ex_list , 7))
+ex_list = [4 , 7 , 2, 80 , 17 , 22]
+print("Sort", sort_list(ex_list))
+print('Test' , find_nearest_element(ex_list , 9))

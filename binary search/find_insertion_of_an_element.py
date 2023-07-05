@@ -29,12 +29,16 @@ def find_index_element(list , target_value):
     if target_value > list[len(list) - 1]:
         return len(list)
     
+    # If target value is less than the first element, return 0
+    if target_value < list[0]:
+        return 0
+    
     while start <= end:
         # define mid
         mid = (start + end) // 2
         
-        if list[mid] < target_value and list[mid+1] > target_value:
-            return mid
+        if list[mid] <= target_value and list[mid+1] >= target_value:
+            return mid+1
         
         if list[mid] < target_value:
             start = mid + 1
@@ -44,4 +48,4 @@ def find_index_element(list , target_value):
 
 # Test function
 ex_type = [3 , 5 , 10 , 2]
-print('Test',find_index_element(ex_type , 600))
+print('Insert {} to index'.format(7),find_index_element(ex_type , 7))
