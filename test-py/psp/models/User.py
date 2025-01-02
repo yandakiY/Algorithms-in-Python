@@ -1,13 +1,13 @@
-from Transaction import Transaction
+from . import Transaction
 
-class User:
+class User():
     '''
         user of the system
     '''
-    def __init__(self , name: str ,balance: float, historic_transaction: list[Transaction] = None):
+    def __init__(self , name: str ,balance: float):
         self._name = name
         self._balance = balance
-        self._transactions = historic_transaction
+        self._transactions = []
         
     def get_name(self):
         return self._name
@@ -27,6 +27,10 @@ class User:
         
     def print_historic_transaction(self) -> str:
         libelle = 'Transaction de ' + self.get_name()
+        
+        if (self._transactions == None):
+            return 'No transaction find.'
+        
         for transaction in self._transactions:
             t = f'\nTransaction de {transaction.get_montant()} FCFA par {transaction.get_provider()} du {transaction.get_date()}. {"Sending" if transaction.get_send() else "Receiver"}'
             libelle += t

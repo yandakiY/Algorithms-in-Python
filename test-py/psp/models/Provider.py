@@ -1,4 +1,5 @@
-class Provider:
+
+class Provider():
     
     def __init__(self , name : str, per : float):
         self._name = name
@@ -7,5 +8,5 @@ class Provider:
     def get_name(self) -> str:
         return self._name
     
-    def get_per(self) -> str:
+    def get_per(self) -> float:
         return self._per
