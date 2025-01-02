@@ -29,6 +29,6 @@ def check_prime(n):
     print("Iteration :",iteration)
     return isPrime
 
-print(check_prime(26))
+print(check_prime(37))
 # number = eval(input("Numbre :"))
 

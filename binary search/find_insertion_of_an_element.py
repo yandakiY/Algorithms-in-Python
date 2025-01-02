@@ -48,4 +48,4 @@ def find_index_element(list , target_value):
 
 # Test function
 ex_type = [3 , 5 , 10 , 2]
-print('Insert {} to index'.format(7),find_index_element(ex_type , 7))
+print('Insert {} to index'.format(7),find_index_element(ex_type , 17))
